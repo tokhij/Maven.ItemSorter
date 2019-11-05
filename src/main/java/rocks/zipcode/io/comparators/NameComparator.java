@@ -9,18 +9,15 @@ import java.util.Comparator;
  */
 public class NameComparator implements Comparator<Item> {
 
-    public int compare(Item name1, Item name2) {
-        name1.getPrice();
-        name2.getPrice();
+    public int compare(Item compName1, Item compName2) {
+        String compN1 = compName1.getName();
+        String compN2  = compName2.getName();
 
-        if (name1.getName().equals(name2.getName())) {
-            return 1;
-        }
-        else{
-            return 0;
+
+        return compN1.compareTo(compN2);
         }
     }
 
 
 
-}
+
